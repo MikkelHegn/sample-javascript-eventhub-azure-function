@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: keda
+  namespace: function
+spec:
+  releaseName: keda
+  chart:
+    git: https://github.com/kedacore/charts/blob/master/keda
+    path: charts/keda
+    ref: master
+  values:
+    replicaCount: 1
