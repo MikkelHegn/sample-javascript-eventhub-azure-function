@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: keda
-  namespace: function
+  namespace: keda
 spec:
   releaseName: keda
   chart:
