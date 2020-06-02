@@ -5,8 +5,8 @@ metadata:
 spec:
   releaseName: keda
   chart:
-    git: https://github.com/kedacore/charts/blob/master/keda
-    path: charts/keda
+    git: https://github.com/kedacore/charts
+    path: keda
     ref: master
   values:
     replicaCount: 1
