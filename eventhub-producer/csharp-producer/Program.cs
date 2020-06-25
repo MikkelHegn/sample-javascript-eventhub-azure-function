@@ -10,10 +10,10 @@ namespace csharpeventhub
      public class Program
      {
          private static EventHubClient eventHubClient;
-         private const string EventHubNamespace = "sample-eventhub-namespace";
+         private const string EventHubNamespace = "archdemo";
          private const string EventHubName = "sample-eventhub";
-         private const string EventHubKey = "<your-eventhub-key>";
-         private const string EventHubConnectionString = "Endpoint=sb://{0}.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey={1}";
+         private const string EventHubKey = "ZySyi50mzKNVylsDwpCg5S6nb16eSOoT9+SP2+/L05I=";
+         private const string EventHubConnectionString = "Endpoint=sb://{0}.servicebus.windows.net/;SharedAccessKeyName=Sender;SharedAccessKey={1}";
 
          public static void Main(string[] args)
          {
@@ -33,7 +33,7 @@ namespace csharpeventhub
              eventHubClient = EventHubClient.CreateFromConnectionString(connectionStringBuilder.ToString());
 
             // Sending 50 messages to Event Hub
-             await SendMessagesToEventHub(50);
+             await SendMessagesToEventHub(500);
              await eventHubClient.CloseAsync();
 
              Console.WriteLine("Press ENTER to exit.");

@@ -15,8 +15,6 @@ spec:
       metricsAdapter: docker.io/kedacore/keda-metrics-adapter:1.4.1
       pullPolicy: Always
     operatorName: keda-operator
-    customResourceDefinition:
-      create: true
     rbac:
       create: true
     serviceAccount:

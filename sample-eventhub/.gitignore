@@ -21,7 +21,6 @@ project.lock.json
 .secrets
 appsettings.json
 local.settings.json
-deploy.yaml
 
 node_modules
 dist
@@ -42,4 +41,3 @@ venv.bak/
 __pycache__/
 *.py[cod]
 *$py.class
-releases/function/prod/secret.yaml
